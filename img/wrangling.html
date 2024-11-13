@@ -1,0 +1,4504 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>b50e24845b074d19a4eb48e6b40f02eb</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="cell code" id="afVPkEDIB1__">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> polars <span class="im">as</span> pl</span></code></pre></div>
+</div>
+<div class="cell markdown" id="oyQ0en2eC7E5">
+<p>#####Import the data and do basic analysis</p>
+</div>
+<div class="cell code" id="B46-jcLVDJPF">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data_path <span class="op">=</span> <span class="st">&#39;drive/MyDrive/datasets/oldcarprice.txt&#39;</span></span></code></pre></div>
+</div>
+<div class="cell code" id="OKx3vNt3FAZE">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#using pandas</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>cols <span class="op">=</span> [<span class="st">&#39;symboling&#39;</span>, <span class="st">&#39;normalized-losses&#39;</span>, <span class="st">&#39;make&#39;</span>, <span class="st">&#39;fuel-type&#39;</span>,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="st">&#39;aspiration&#39;</span>, <span class="st">&#39;num-of-doors&#39;</span>, <span class="st">&#39;body-style&#39;</span>, <span class="st">&#39;drive-wheels&#39;</span>, <span class="st">&#39;engine-location&#39;</span>, <span class="st">&#39;wheel-base&#39;</span>, <span class="st">&#39;length&#39;</span>, <span class="st">&#39;width&#39;</span>, <span class="st">&#39;height&#39;</span>, <span class="st">&#39;curb-weight&#39;</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="st">&#39;engine-type&#39;</span>, <span class="st">&#39;num-of-cylinders&#39;</span>, <span class="st">&#39;engine-size&#39;</span>, <span class="st">&#39;fuel-system&#39;</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="st">&#39;bore&#39;</span>, <span class="st">&#39;stroke&#39;</span>, <span class="st">&#39;compression-ratio&#39;</span>, <span class="st">&#39;horsepower&#39;</span>, <span class="st">&#39;peak-rpm&#39;</span>,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="st">&#39;city-mpg&#39;</span>, <span class="st">&#39;highway-mpg&#39;</span>, <span class="st">&#39;price&#39;</span>]</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">#read dataset</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>oldcarprice <span class="op">=</span> pd.read_csv(data_path, names <span class="op">=</span> cols)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:253}"
+id="lsp4VfrwGbVD" data-outputId="a45f093d-c8e9-4578-c396-660d65389963">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(oldcarprice.shape)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>oldcarprice.head()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>(205, 26)
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="4">
+
+  <div id="df-9919f343-0b3d-46a9-9862-2a59a8a2b5e6" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>symboling</th>
+      <th>normalized-losses</th>
+      <th>make</th>
+      <th>fuel-type</th>
+      <th>aspiration</th>
+      <th>num-of-doors</th>
+      <th>body-style</th>
+      <th>drive-wheels</th>
+      <th>engine-location</th>
+      <th>wheel-base</th>
+      <th>...</th>
+      <th>engine-size</th>
+      <th>fuel-system</th>
+      <th>bore</th>
+      <th>stroke</th>
+      <th>compression-ratio</th>
+      <th>horsepower</th>
+      <th>peak-rpm</th>
+      <th>city-mpg</th>
+      <th>highway-mpg</th>
+      <th>price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>3</td>
+      <td>?</td>
+      <td>alfa-romero</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>two</td>
+      <td>convertible</td>
+      <td>rwd</td>
+      <td>front</td>
+      <td>88.6</td>
+      <td>...</td>
+      <td>130</td>
+      <td>mpfi</td>
+      <td>3.47</td>
+      <td>2.68</td>
+      <td>9.0</td>
+      <td>111</td>
+      <td>5000</td>
+      <td>21</td>
+      <td>27</td>
+      <td>13495</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>3</td>
+      <td>?</td>
+      <td>alfa-romero</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>two</td>
+      <td>convertible</td>
+      <td>rwd</td>
+      <td>front</td>
+      <td>88.6</td>
+      <td>...</td>
+      <td>130</td>
+      <td>mpfi</td>
+      <td>3.47</td>
+      <td>2.68</td>
+      <td>9.0</td>
+      <td>111</td>
+      <td>5000</td>
+      <td>21</td>
+      <td>27</td>
+      <td>16500</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+      <td>?</td>
+      <td>alfa-romero</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>two</td>
+      <td>hatchback</td>
+      <td>rwd</td>
+      <td>front</td>
+      <td>94.5</td>
+      <td>...</td>
+      <td>152</td>
+      <td>mpfi</td>
+      <td>2.68</td>
+      <td>3.47</td>
+      <td>9.0</td>
+      <td>154</td>
+      <td>5000</td>
+      <td>19</td>
+      <td>26</td>
+      <td>16500</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2</td>
+      <td>164</td>
+      <td>audi</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>four</td>
+      <td>sedan</td>
+      <td>fwd</td>
+      <td>front</td>
+      <td>99.8</td>
+      <td>...</td>
+      <td>109</td>
+      <td>mpfi</td>
+      <td>3.19</td>
+      <td>3.40</td>
+      <td>10.0</td>
+      <td>102</td>
+      <td>5500</td>
+      <td>24</td>
+      <td>30</td>
+      <td>13950</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2</td>
+      <td>164</td>
+      <td>audi</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>four</td>
+      <td>sedan</td>
+      <td>4wd</td>
+      <td>front</td>
+      <td>99.4</td>
+      <td>...</td>
+      <td>136</td>
+      <td>mpfi</td>
+      <td>3.19</td>
+      <td>3.40</td>
+      <td>8.0</td>
+      <td>115</td>
+      <td>5500</td>
+      <td>18</td>
+      <td>22</td>
+      <td>17450</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 26 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-9919f343-0b3d-46a9-9862-2a59a8a2b5e6')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-9919f343-0b3d-46a9-9862-2a59a8a2b5e6 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-9919f343-0b3d-46a9-9862-2a59a8a2b5e6');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-982529ad-cc11-4c9f-8e17-61b9fa856280">
+  <button class="colab-df-quickchart" onclick="quickchart('df-982529ad-cc11-4c9f-8e17-61b9fa856280')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-982529ad-cc11-4c9f-8e17-61b9fa856280 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:236}"
+id="Tv-lWkDsHueO" data-outputId="18fe3779-f597-4d9f-8f5a-331cb89be775">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#the dataframe has a number of missing values that would rather be replaced with NaN</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>oldcarprice <span class="op">=</span> oldcarprice.replace(<span class="st">&#39;?&#39;</span>, np.NAN)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>oldcarprice.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="5">
+
+  <div id="df-c9bf8ff6-1e8f-4440-b676-74b6ac9eb956" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>symboling</th>
+      <th>normalized-losses</th>
+      <th>make</th>
+      <th>fuel-type</th>
+      <th>aspiration</th>
+      <th>num-of-doors</th>
+      <th>body-style</th>
+      <th>drive-wheels</th>
+      <th>engine-location</th>
+      <th>wheel-base</th>
+      <th>...</th>
+      <th>engine-size</th>
+      <th>fuel-system</th>
+      <th>bore</th>
+      <th>stroke</th>
+      <th>compression-ratio</th>
+      <th>horsepower</th>
+      <th>peak-rpm</th>
+      <th>city-mpg</th>
+      <th>highway-mpg</th>
+      <th>price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>3</td>
+      <td>NaN</td>
+      <td>alfa-romero</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>two</td>
+      <td>convertible</td>
+      <td>rwd</td>
+      <td>front</td>
+      <td>88.6</td>
+      <td>...</td>
+      <td>130</td>
+      <td>mpfi</td>
+      <td>3.47</td>
+      <td>2.68</td>
+      <td>9.0</td>
+      <td>111</td>
+      <td>5000</td>
+      <td>21</td>
+      <td>27</td>
+      <td>13495</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>3</td>
+      <td>NaN</td>
+      <td>alfa-romero</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>two</td>
+      <td>convertible</td>
+      <td>rwd</td>
+      <td>front</td>
+      <td>88.6</td>
+      <td>...</td>
+      <td>130</td>
+      <td>mpfi</td>
+      <td>3.47</td>
+      <td>2.68</td>
+      <td>9.0</td>
+      <td>111</td>
+      <td>5000</td>
+      <td>21</td>
+      <td>27</td>
+      <td>16500</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+      <td>NaN</td>
+      <td>alfa-romero</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>two</td>
+      <td>hatchback</td>
+      <td>rwd</td>
+      <td>front</td>
+      <td>94.5</td>
+      <td>...</td>
+      <td>152</td>
+      <td>mpfi</td>
+      <td>2.68</td>
+      <td>3.47</td>
+      <td>9.0</td>
+      <td>154</td>
+      <td>5000</td>
+      <td>19</td>
+      <td>26</td>
+      <td>16500</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2</td>
+      <td>164</td>
+      <td>audi</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>four</td>
+      <td>sedan</td>
+      <td>fwd</td>
+      <td>front</td>
+      <td>99.8</td>
+      <td>...</td>
+      <td>109</td>
+      <td>mpfi</td>
+      <td>3.19</td>
+      <td>3.40</td>
+      <td>10.0</td>
+      <td>102</td>
+      <td>5500</td>
+      <td>24</td>
+      <td>30</td>
+      <td>13950</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2</td>
+      <td>164</td>
+      <td>audi</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>four</td>
+      <td>sedan</td>
+      <td>4wd</td>
+      <td>front</td>
+      <td>99.4</td>
+      <td>...</td>
+      <td>136</td>
+      <td>mpfi</td>
+      <td>3.19</td>
+      <td>3.40</td>
+      <td>8.0</td>
+      <td>115</td>
+      <td>5500</td>
+      <td>18</td>
+      <td>22</td>
+      <td>17450</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 26 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-c9bf8ff6-1e8f-4440-b676-74b6ac9eb956')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-c9bf8ff6-1e8f-4440-b676-74b6ac9eb956 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-c9bf8ff6-1e8f-4440-b676-74b6ac9eb956');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-a8bd6607-2326-45ed-aec5-9dfd1d4f2bce">
+  <button class="colab-df-quickchart" onclick="quickchart('df-a8bd6607-2326-45ed-aec5-9dfd1d4f2bce')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-a8bd6607-2326-45ed-aec5-9dfd1d4f2bce button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="10NUjrBpINr6" data-outputId="99ab6fd9-b630-439c-8683-ca57f501789e">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#find out if there are still any null values</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>oldcarprice.isnull().<span class="bu">any</span>().<span class="bu">any</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="6">
+<pre><code>True</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:899}"
+id="-s_42e9bIgIE" data-outputId="527755dd-fedc-43d6-e60d-4b0fb4b789a0">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>oldcarprice.isnull().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="7">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>symboling</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>normalized-losses</th>
+      <td>41</td>
+    </tr>
+    <tr>
+      <th>make</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>fuel-type</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>aspiration</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>num-of-doors</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>body-style</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>drive-wheels</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>engine-location</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>wheel-base</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>length</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>width</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>height</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>curb-weight</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>engine-type</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>num-of-cylinders</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>engine-size</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>fuel-system</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>bore</th>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>stroke</th>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>compression-ratio</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>horsepower</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>peak-rpm</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>city-mpg</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>highway-mpg</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>price</th>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+</div><br><label><b>dtype:</b> int64</label>
+</div>
+</div>
+<div class="cell markdown" id="nkPM4dY5McKn">
+<p>#####How to deal with missing values: Either replace the row with the
+mean of the column, replace by frequency, or drop the rows entirely</p>
+</div>
+<div class="cell code" id="IEsdrd6iMtRd">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Lets replace by mean</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>avg_normalized_losses <span class="op">=</span> oldcarprice[<span class="st">&#39;normalized-losses&#39;</span>].astype(<span class="st">&#39;float&#39;</span>).mean()</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>oldcarprice[<span class="st">&#39;normalized-losses&#39;</span>].replace(np.NAN, avg_normalized_losses, inplace <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:458}"
+id="j9YamiONOlh8" data-outputId="029eff54-f800-499e-eb6e-c88072cf8613">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>oldcarprice[<span class="st">&#39;normalized-losses&#39;</span>]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="9">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>normalized-losses</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>122.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>122.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>122.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>164</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>164</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>200</th>
+      <td>95</td>
+    </tr>
+    <tr>
+      <th>201</th>
+      <td>95</td>
+    </tr>
+    <tr>
+      <th>202</th>
+      <td>95</td>
+    </tr>
+    <tr>
+      <th>203</th>
+      <td>95</td>
+    </tr>
+    <tr>
+      <th>204</th>
+      <td>95</td>
+    </tr>
+  </tbody>
+</table>
+<p>205 rows × 1 columns</p>
+</div><br><label><b>dtype:</b> object</label>
+</div>
+</div>
+<div class="cell code" id="ZDndzJzkP5QQ">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#num of doors</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>oldcarprice[<span class="st">&#39;num-of-cylinders&#39;</span>].value_counts()</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co">#since four is the most frequent lets replace nan with four</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>oldcarprice[<span class="st">&#39;num-of-doors&#39;</span>].replace(np.NAN, <span class="st">&#39;four&#39;</span>, inplace <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code" id="awLauyH3RZHS">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#bore</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>avg_bore <span class="op">=</span> oldcarprice[<span class="st">&#39;bore&#39;</span>].astype(<span class="st">&#39;float&#39;</span>).mean()</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>oldcarprice[<span class="st">&#39;bore&#39;</span>].replace(np.NAN, avg_bore, inplace <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code" id="wxnO38zuRt_t">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">#stroke</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>avg_stroke <span class="op">=</span> oldcarprice[<span class="st">&#39;stroke&#39;</span>].astype(<span class="st">&#39;float&#39;</span>).mean()</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>oldcarprice[<span class="st">&#39;stroke&#39;</span>].replace(np.NAN, avg_stroke, inplace <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="XQLpvWiPSxNc" data-outputId="1fc60ef9-71c5-4afe-fa04-242d51adad7a">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#horsepower</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>avg_horsepower <span class="op">=</span> oldcarprice[<span class="st">&#39;horsepower&#39;</span>].astype(<span class="st">&#39;float&#39;</span>).mean()</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;The average horsepower is: &#39;</span>, avg_horsepower)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>oldcarprice[<span class="st">&#39;horsepower&#39;</span>].replace(np.NAN, avg_horsepower, inplace <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>The average horsepower is:  104.25615763546799
+</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="aTJwUDUcTcuS" data-outputId="dbc37d00-1c0c-41aa-8c19-9f01adb90624">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">#peak rpm</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>avg_rpm <span class="op">=</span> oldcarprice[<span class="st">&#39;peak-rpm&#39;</span>].astype(<span class="st">&#39;float&#39;</span>).mean()</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;The average rpm is: &#39;</span>, avg_rpm)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>oldcarprice[<span class="st">&#39;peak-rpm&#39;</span>].replace(np.NAN, avg_rpm, inplace <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>The average rpm is:  5125.369458128079
+</code></pre>
+</div>
+</div>
+<div class="cell code" id="PwxajHswTsg-">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#For the price we&#39;ll just drop the rows because it is a sensitive column</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>oldcarprice.dropna(subset<span class="op">=</span><span class="st">&#39;price&#39;</span>, axis<span class="op">=</span><span class="dv">0</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="co">#reset index</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>oldcarprice.reset_index(drop<span class="op">=</span><span class="va">True</span>, inplace<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:899}"
+id="lnaPk3xeUJVi" data-outputId="a3430b69-bd11-4e1e-cf90-edbdb3c662d6">
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Find out any remaining nulls</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>oldcarprice.isnull().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="58">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>symboling</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>normalized-losses</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>make</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>fuel-type</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>aspiration</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>num-of-doors</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>body-style</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>drive-wheels</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>engine-location</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>wheel-base</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>length</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>width</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>height</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>curb-weight</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>engine-type</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>num-of-cylinders</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>engine-size</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>fuel-system</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>bore</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>stroke</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>compression-ratio</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>horsepower</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>peak-rpm</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>city-mpg</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>highway-mpg</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>price</th>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div><br><label><b>dtype:</b> int64</label>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="yQ-KhQYIUSd9" data-outputId="a9f154c5-2534-4df6-e575-46f2ec6a4c38">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>oldcarprice.shape</span></code></pre></div>
+<div class="output execute_result" data-execution_count="59">
+<pre><code>(201, 26)</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="t3q3CkNcX3Hm">
+<p>####Changing the data columns into their correct dtypes</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:899}"
+id="KiE-aXVTX-c4" data-outputId="96dd2f9e-5303-48d4-b641-e8b60086678d">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>oldcarprice.dtypes</span></code></pre></div>
+<div class="output execute_result" data-execution_count="60">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>symboling</th>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <th>normalized-losses</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>make</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>fuel-type</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>aspiration</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>num-of-doors</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>body-style</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>drive-wheels</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>engine-location</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>wheel-base</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>length</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>width</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>height</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>curb-weight</th>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <th>engine-type</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>num-of-cylinders</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>engine-size</th>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <th>fuel-system</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>bore</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>stroke</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>compression-ratio</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>horsepower</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>peak-rpm</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>city-mpg</th>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <th>highway-mpg</th>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <th>price</th>
+      <td>object</td>
+    </tr>
+  </tbody>
+</table>
+</div><br><label><b>dtype:</b> object</label>
+</div>
+</div>
+<div class="cell code" id="nrN87ohnYW4y">
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>oldcarprice[[<span class="st">&#39;peak-rpm&#39;</span>, <span class="st">&#39;bore&#39;</span>, <span class="st">&#39;stroke&#39;</span>, <span class="st">&#39;price&#39;</span>]] <span class="op">=</span> oldcarprice[[<span class="st">&#39;peak-rpm&#39;</span>, <span class="st">&#39;bore&#39;</span>, <span class="st">&#39;stroke&#39;</span>, <span class="st">&#39;price&#39;</span>]].astype(<span class="st">&#39;float&#39;</span>)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>oldcarprice[[<span class="st">&#39;normalized-losses&#39;</span>]] <span class="op">=</span> oldcarprice[[<span class="st">&#39;normalized-losses&#39;</span>]].astype(<span class="st">&#39;int&#39;</span>)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:899}"
+id="_EOR0WMWZJl-" data-outputId="f4cc7f32-5538-47fd-b8a7-53c0141759f7">
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>oldcarprice.dtypes</span></code></pre></div>
+<div class="output execute_result" data-execution_count="63">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>symboling</th>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <th>normalized-losses</th>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <th>make</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>fuel-type</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>aspiration</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>num-of-doors</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>body-style</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>drive-wheels</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>engine-location</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>wheel-base</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>length</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>width</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>height</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>curb-weight</th>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <th>engine-type</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>num-of-cylinders</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>engine-size</th>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <th>fuel-system</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>bore</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>stroke</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>compression-ratio</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>horsepower</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>peak-rpm</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>city-mpg</th>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <th>highway-mpg</th>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <th>price</th>
+      <td>float64</td>
+    </tr>
+  </tbody>
+</table>
+</div><br><label><b>dtype:</b> object</label>
+</div>
+</div>
+<div class="cell markdown" id="3PSaYzs0Zn76">
+<p>####Standardization and normalization of data</p>
+</div>
+<div class="cell code" id="V1OjxFqBZs1L">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co">#miles per gallon to litres per 100 km</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>oldcarprice[<span class="st">&#39;highway-mpg&#39;</span>] <span class="op">=</span> <span class="dv">235</span><span class="op">/</span>oldcarprice[<span class="st">&#39;highway-mpg&#39;</span>]</span></code></pre></div>
+</div>
+<div class="cell code" id="cQQd4bE0bTx4">
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>oldcarprice[<span class="st">&#39;city-mpg&#39;</span>] <span class="op">=</span> <span class="dv">235</span><span class="op">/</span>oldcarprice[<span class="st">&#39;city-mpg&#39;</span>]</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>oldcarprice.rename(columns<span class="op">=</span>{<span class="st">&#39;city-mpg&#39;</span> : <span class="st">&#39;city-L/100km&#39;</span>}, inplace<span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code" id="6Fa909c4aCxJ">
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co">#rename the column to highway-L/100km</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>oldcarprice.rename(columns<span class="op">=</span>{<span class="st">&#39;highway-mpg&#39;</span> : <span class="st">&#39;highway-L/100km&#39;</span>}, inplace<span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code" id="1tJmHheoapEM">
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co">#normalize the length, width and height to range 0-1</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>oldcarprice[<span class="st">&#39;length&#39;</span>] <span class="op">=</span> oldcarprice[<span class="st">&#39;length&#39;</span>]<span class="op">/</span>oldcarprice[<span class="st">&#39;length&#39;</span>].<span class="bu">max</span>()</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>oldcarprice[<span class="st">&#39;height&#39;</span>] <span class="op">=</span> oldcarprice[<span class="st">&#39;height&#39;</span>]<span class="op">/</span>oldcarprice[<span class="st">&#39;height&#39;</span>].<span class="bu">max</span>()</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>oldcarprice[<span class="st">&#39;width&#39;</span>] <span class="op">=</span> oldcarprice[<span class="st">&#39;width&#39;</span>]<span class="op">/</span>oldcarprice[<span class="st">&#39;width&#39;</span>].<span class="bu">max</span>()</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:236}"
+id="szz7LnJxbHNn" data-outputId="3c4541e9-9017-47cb-f23d-83e053edb099">
+<div class="sourceCode" id="cb30"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>oldcarprice.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="71">
+
+  <div id="df-5fbb9c94-78c6-4e1c-819a-62e46866124c" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>symboling</th>
+      <th>normalized-losses</th>
+      <th>make</th>
+      <th>fuel-type</th>
+      <th>aspiration</th>
+      <th>num-of-doors</th>
+      <th>body-style</th>
+      <th>drive-wheels</th>
+      <th>engine-location</th>
+      <th>wheel-base</th>
+      <th>...</th>
+      <th>engine-size</th>
+      <th>fuel-system</th>
+      <th>bore</th>
+      <th>stroke</th>
+      <th>compression-ratio</th>
+      <th>horsepower</th>
+      <th>peak-rpm</th>
+      <th>city-L/100km</th>
+      <th>highway-L/100km</th>
+      <th>price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>3</td>
+      <td>122</td>
+      <td>alfa-romero</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>two</td>
+      <td>convertible</td>
+      <td>rwd</td>
+      <td>front</td>
+      <td>88.6</td>
+      <td>...</td>
+      <td>130</td>
+      <td>mpfi</td>
+      <td>3.47</td>
+      <td>2.68</td>
+      <td>9.0</td>
+      <td>111</td>
+      <td>5000.0</td>
+      <td>11.190476</td>
+      <td>8.703704</td>
+      <td>13495.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>3</td>
+      <td>122</td>
+      <td>alfa-romero</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>two</td>
+      <td>convertible</td>
+      <td>rwd</td>
+      <td>front</td>
+      <td>88.6</td>
+      <td>...</td>
+      <td>130</td>
+      <td>mpfi</td>
+      <td>3.47</td>
+      <td>2.68</td>
+      <td>9.0</td>
+      <td>111</td>
+      <td>5000.0</td>
+      <td>11.190476</td>
+      <td>8.703704</td>
+      <td>16500.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+      <td>122</td>
+      <td>alfa-romero</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>two</td>
+      <td>hatchback</td>
+      <td>rwd</td>
+      <td>front</td>
+      <td>94.5</td>
+      <td>...</td>
+      <td>152</td>
+      <td>mpfi</td>
+      <td>2.68</td>
+      <td>3.47</td>
+      <td>9.0</td>
+      <td>154</td>
+      <td>5000.0</td>
+      <td>12.368421</td>
+      <td>9.038462</td>
+      <td>16500.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2</td>
+      <td>164</td>
+      <td>audi</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>four</td>
+      <td>sedan</td>
+      <td>fwd</td>
+      <td>front</td>
+      <td>99.8</td>
+      <td>...</td>
+      <td>109</td>
+      <td>mpfi</td>
+      <td>3.19</td>
+      <td>3.40</td>
+      <td>10.0</td>
+      <td>102</td>
+      <td>5500.0</td>
+      <td>9.791667</td>
+      <td>7.833333</td>
+      <td>13950.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2</td>
+      <td>164</td>
+      <td>audi</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>four</td>
+      <td>sedan</td>
+      <td>4wd</td>
+      <td>front</td>
+      <td>99.4</td>
+      <td>...</td>
+      <td>136</td>
+      <td>mpfi</td>
+      <td>3.19</td>
+      <td>3.40</td>
+      <td>8.0</td>
+      <td>115</td>
+      <td>5500.0</td>
+      <td>13.055556</td>
+      <td>10.681818</td>
+      <td>17450.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 26 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-5fbb9c94-78c6-4e1c-819a-62e46866124c')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-5fbb9c94-78c6-4e1c-819a-62e46866124c button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-5fbb9c94-78c6-4e1c-819a-62e46866124c');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-2740cf3b-766e-4c50-9a81-9ee901b09d99">
+  <button class="colab-df-quickchart" onclick="quickchart('df-2740cf3b-766e-4c50-9a81-9ee901b09d99')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-2740cf3b-766e-4c50-9a81-9ee901b09d99 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="lhRCIRSpcdvZ">
+<p>####Divide the data into bins so that there is an analysis of how
+low, medium and high horsepower affects price</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:236}"
+id="DzjHs3hEcozT" data-outputId="88758a33-1c53-4e81-facd-8f70c40949d2">
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>oldcarprice[<span class="st">&#39;horsepower&#39;</span>] <span class="op">=</span> oldcarprice[<span class="st">&#39;horsepower&#39;</span>].astype(<span class="st">&#39;int&#39;</span>, copy <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>oldcarprice.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="75">
+
+  <div id="df-d26955f2-60e3-402b-9d3d-ae6a87c09e1d" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>symboling</th>
+      <th>normalized-losses</th>
+      <th>make</th>
+      <th>fuel-type</th>
+      <th>aspiration</th>
+      <th>num-of-doors</th>
+      <th>body-style</th>
+      <th>drive-wheels</th>
+      <th>engine-location</th>
+      <th>wheel-base</th>
+      <th>...</th>
+      <th>engine-size</th>
+      <th>fuel-system</th>
+      <th>bore</th>
+      <th>stroke</th>
+      <th>compression-ratio</th>
+      <th>horsepower</th>
+      <th>peak-rpm</th>
+      <th>city-L/100km</th>
+      <th>highway-L/100km</th>
+      <th>price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>3</td>
+      <td>122</td>
+      <td>alfa-romero</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>two</td>
+      <td>convertible</td>
+      <td>rwd</td>
+      <td>front</td>
+      <td>88.6</td>
+      <td>...</td>
+      <td>130</td>
+      <td>mpfi</td>
+      <td>3.47</td>
+      <td>2.68</td>
+      <td>9.0</td>
+      <td>111</td>
+      <td>5000.0</td>
+      <td>11.190476</td>
+      <td>8.703704</td>
+      <td>13495.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>3</td>
+      <td>122</td>
+      <td>alfa-romero</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>two</td>
+      <td>convertible</td>
+      <td>rwd</td>
+      <td>front</td>
+      <td>88.6</td>
+      <td>...</td>
+      <td>130</td>
+      <td>mpfi</td>
+      <td>3.47</td>
+      <td>2.68</td>
+      <td>9.0</td>
+      <td>111</td>
+      <td>5000.0</td>
+      <td>11.190476</td>
+      <td>8.703704</td>
+      <td>16500.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+      <td>122</td>
+      <td>alfa-romero</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>two</td>
+      <td>hatchback</td>
+      <td>rwd</td>
+      <td>front</td>
+      <td>94.5</td>
+      <td>...</td>
+      <td>152</td>
+      <td>mpfi</td>
+      <td>2.68</td>
+      <td>3.47</td>
+      <td>9.0</td>
+      <td>154</td>
+      <td>5000.0</td>
+      <td>12.368421</td>
+      <td>9.038462</td>
+      <td>16500.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2</td>
+      <td>164</td>
+      <td>audi</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>four</td>
+      <td>sedan</td>
+      <td>fwd</td>
+      <td>front</td>
+      <td>99.8</td>
+      <td>...</td>
+      <td>109</td>
+      <td>mpfi</td>
+      <td>3.19</td>
+      <td>3.40</td>
+      <td>10.0</td>
+      <td>102</td>
+      <td>5500.0</td>
+      <td>9.791667</td>
+      <td>7.833333</td>
+      <td>13950.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2</td>
+      <td>164</td>
+      <td>audi</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>four</td>
+      <td>sedan</td>
+      <td>4wd</td>
+      <td>front</td>
+      <td>99.4</td>
+      <td>...</td>
+      <td>136</td>
+      <td>mpfi</td>
+      <td>3.19</td>
+      <td>3.40</td>
+      <td>8.0</td>
+      <td>115</td>
+      <td>5500.0</td>
+      <td>13.055556</td>
+      <td>10.681818</td>
+      <td>17450.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 26 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-d26955f2-60e3-402b-9d3d-ae6a87c09e1d')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-d26955f2-60e3-402b-9d3d-ae6a87c09e1d button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-d26955f2-60e3-402b-9d3d-ae6a87c09e1d');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-de7e913f-c7e4-4384-a0ab-46bc459d3d24">
+  <button class="colab-df-quickchart" onclick="quickchart('df-de7e913f-c7e4-4384-a0ab-46bc459d3d24')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-de7e913f-c7e4-4384-a0ab-46bc459d3d24 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:469}"
+id="w30G6j1edNRe" data-outputId="26c215f1-09d6-4185-e70f-be2c878016b9">
+<div class="sourceCode" id="cb32"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co">#view how horsepower ranges</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>plt.hist(oldcarprice[<span class="st">&#39;horsepower&#39;</span>])</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Horsepower&#39;</span>)</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Count&#39;</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="79">
+<pre><code>Text(0, 0.5, &#39;Count&#39;)</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_b554ffb62dba482e83fea97c534cea6f/4b83a495b444d3ad454ae4d8dec1a574162fc7f4.png" /></p>
+</div>
+</div>
+<div class="cell code" id="xTk5s5HOdxcp">
+<div class="sourceCode" id="cb34"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co">#create 3 bins using numpy</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>bins <span class="op">=</span> np.linspace(<span class="bu">min</span>(oldcarprice[<span class="st">&#39;horsepower&#39;</span>]), <span class="bu">max</span>(oldcarprice[<span class="st">&#39;horsepower&#39;</span>]), <span class="dv">4</span>)</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>groups <span class="op">=</span> [<span class="st">&#39;Low&#39;</span>, <span class="st">&#39;Medium&#39;</span>, <span class="st">&#39;High&#39;</span>]</span></code></pre></div>
+</div>
+<div class="cell code" id="EB3ESTnbfKBh">
+<div class="sourceCode" id="cb35"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co">#cut using pandas</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>oldcarprice[<span class="st">&#39;horsepower-bins&#39;</span>] <span class="op">=</span> pd.cut(oldcarprice[<span class="st">&#39;horsepower&#39;</span>], bins, labels<span class="op">=</span>groups, include_lowest<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:424}"
+id="6fpDTVNofkH1" data-outputId="9fcfc3eb-565c-412b-9a17-1a8d9160eaab">
+<div class="sourceCode" id="cb36"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>oldcarprice[[<span class="st">&#39;horsepower&#39;</span>, <span class="st">&#39;horsepower-bins&#39;</span>]]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="83">
+
+  <div id="df-30aff718-fdc3-4bfa-8ad8-4b5792e3e769" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>horsepower</th>
+      <th>horsepower-bins</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>111</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>111</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>154</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>102</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>115</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>196</th>
+      <td>114</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <th>197</th>
+      <td>160</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <th>198</th>
+      <td>134</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <th>199</th>
+      <td>106</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <th>200</th>
+      <td>114</td>
+      <td>Low</td>
+    </tr>
+  </tbody>
+</table>
+<p>201 rows × 2 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-30aff718-fdc3-4bfa-8ad8-4b5792e3e769')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-30aff718-fdc3-4bfa-8ad8-4b5792e3e769 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-30aff718-fdc3-4bfa-8ad8-4b5792e3e769');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-03f83757-d1f5-4d88-a03f-0a5c69c53ae9">
+  <button class="colab-df-quickchart" onclick="quickchart('df-03f83757-d1f5-4d88-a03f-0a5c69c53ae9')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-03f83757-d1f5-4d88-a03f-0a5c69c53ae9 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="2it-_MOhwhRs">
+<p>####Indicator variable</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:206}"
+id="u2QSWuL3wkDz" data-outputId="ae9829cf-cddf-43b9-c406-c72434deeb58">
+<div class="sourceCode" id="cb37"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>dummy_var1 <span class="op">=</span> pd.get_dummies(oldcarprice[<span class="st">&#39;fuel-type&#39;</span>])</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>dummy_var1.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="84">
+
+  <div id="df-19271bc1-351b-4f76-9512-af4278a54fb6" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>diesel</th>
+      <th>gas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-19271bc1-351b-4f76-9512-af4278a54fb6')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-19271bc1-351b-4f76-9512-af4278a54fb6 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-19271bc1-351b-4f76-9512-af4278a54fb6');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-4db84ed1-3f97-4e58-a655-6d1d0c411bc9">
+  <button class="colab-df-quickchart" onclick="quickchart('df-4db84ed1-3f97-4e58-a655-6d1d0c411bc9')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-4db84ed1-3f97-4e58-a655-6d1d0c411bc9 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:206}"
+id="PUDZpPD5xFg1" data-outputId="2b0e1f8a-7227-4fc2-f8ac-7ac7764a863e">
+<div class="sourceCode" id="cb38"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>dummy_var1.rename(columns<span class="op">=</span>{<span class="st">&#39;fuel-type-diesel&#39;</span>:<span class="st">&#39;gas&#39;</span>, <span class="st">&#39;fuel-type-diesel&#39;</span>:<span class="st">&#39;diesel&#39;</span>}, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>dummy_var1.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="85">
+
+  <div id="df-04f4382c-c101-415e-b013-61edf11bd7be" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>diesel</th>
+      <th>gas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-04f4382c-c101-415e-b013-61edf11bd7be')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-04f4382c-c101-415e-b013-61edf11bd7be button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-04f4382c-c101-415e-b013-61edf11bd7be');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-c3d9ca68-f22d-4a02-91cc-94edb9874c75">
+  <button class="colab-df-quickchart" onclick="quickchart('df-c3d9ca68-f22d-4a02-91cc-94edb9874c75')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-c3d9ca68-f22d-4a02-91cc-94edb9874c75 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:264}"
+id="Z7AIXwUWxR2L" data-outputId="1ff8646c-bc07-4d80-cf1a-067b0d82a2a5">
+<div class="sourceCode" id="cb39"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># merge data frame &quot;df&quot; and &quot;dummy_var1&quot;</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>oldcarprice <span class="op">=</span> pd.concat([oldcarprice, dummy_var1], axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>oldcarprice.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="87">
+
+  <div id="df-86039b70-42ef-4ae6-8258-8667e0062816" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>symboling</th>
+      <th>normalized-losses</th>
+      <th>make</th>
+      <th>fuel-type</th>
+      <th>aspiration</th>
+      <th>num-of-doors</th>
+      <th>body-style</th>
+      <th>drive-wheels</th>
+      <th>engine-location</th>
+      <th>wheel-base</th>
+      <th>...</th>
+      <th>horsepower</th>
+      <th>peak-rpm</th>
+      <th>city-L/100km</th>
+      <th>highway-L/100km</th>
+      <th>price</th>
+      <th>horsepower-bins</th>
+      <th>diesel</th>
+      <th>gas</th>
+      <th>diesel</th>
+      <th>gas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>3</td>
+      <td>122</td>
+      <td>alfa-romero</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>two</td>
+      <td>convertible</td>
+      <td>rwd</td>
+      <td>front</td>
+      <td>88.6</td>
+      <td>...</td>
+      <td>111</td>
+      <td>5000.0</td>
+      <td>11.190476</td>
+      <td>8.703704</td>
+      <td>13495.0</td>
+      <td>Low</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>3</td>
+      <td>122</td>
+      <td>alfa-romero</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>two</td>
+      <td>convertible</td>
+      <td>rwd</td>
+      <td>front</td>
+      <td>88.6</td>
+      <td>...</td>
+      <td>111</td>
+      <td>5000.0</td>
+      <td>11.190476</td>
+      <td>8.703704</td>
+      <td>16500.0</td>
+      <td>Low</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+      <td>122</td>
+      <td>alfa-romero</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>two</td>
+      <td>hatchback</td>
+      <td>rwd</td>
+      <td>front</td>
+      <td>94.5</td>
+      <td>...</td>
+      <td>154</td>
+      <td>5000.0</td>
+      <td>12.368421</td>
+      <td>9.038462</td>
+      <td>16500.0</td>
+      <td>Medium</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2</td>
+      <td>164</td>
+      <td>audi</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>four</td>
+      <td>sedan</td>
+      <td>fwd</td>
+      <td>front</td>
+      <td>99.8</td>
+      <td>...</td>
+      <td>102</td>
+      <td>5500.0</td>
+      <td>9.791667</td>
+      <td>7.833333</td>
+      <td>13950.0</td>
+      <td>Low</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2</td>
+      <td>164</td>
+      <td>audi</td>
+      <td>gas</td>
+      <td>std</td>
+      <td>four</td>
+      <td>sedan</td>
+      <td>4wd</td>
+      <td>front</td>
+      <td>99.4</td>
+      <td>...</td>
+      <td>115</td>
+      <td>5500.0</td>
+      <td>13.055556</td>
+      <td>10.681818</td>
+      <td>17450.0</td>
+      <td>Low</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 31 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-86039b70-42ef-4ae6-8258-8667e0062816')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-86039b70-42ef-4ae6-8258-8667e0062816 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-86039b70-42ef-4ae6-8258-8667e0062816');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-a26cb0b2-12fa-42c6-b75c-19a96b049bac">
+  <button class="colab-df-quickchart" onclick="quickchart('df-a26cb0b2-12fa-42c6-b75c-19a96b049bac')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-a26cb0b2-12fa-42c6-b75c-19a96b049bac button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+<div class="output stream stdout">
+<pre><code>Warning: Total number of columns (31) exceeds max_columns (20) limiting to first (20) columns.
+</code></pre>
+</div>
+</div>
+<div class="cell code" id="zZQs6yGfySbW">
+<div class="sourceCode" id="cb41"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co">#drop original</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>oldcarprice.drop(<span class="st">&#39;fuel-type&#39;</span>,axis <span class="op">=</span> <span class="dv">1</span>,  inplace<span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:206}"
+id="3JjOrqrhyxc-" data-outputId="8a0bb0c4-c706-48e5-fbf0-ab105598a66d">
+<div class="sourceCode" id="cb42"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get indicator variables of aspiration and assign it to data frame &quot;dummy_variable_2&quot;</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>dummy_variable_2 <span class="op">=</span> pd.get_dummies(oldcarprice[<span class="st">&#39;aspiration&#39;</span>])</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a><span class="co"># change column names for clarity</span></span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>dummy_variable_2.rename(columns<span class="op">=</span>{<span class="st">&#39;std&#39;</span>:<span class="st">&#39;aspiration-std&#39;</span>, <span class="st">&#39;turbo&#39;</span>: <span class="st">&#39;aspiration-turbo&#39;</span>}, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a><span class="co"># show first 5 instances of data frame &quot;dummy_variable_1&quot;</span></span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>dummy_variable_2.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="90">
+
+  <div id="df-3e03eb6a-9882-405e-8e27-d3ab5cb2c577" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>aspiration-std</th>
+      <th>aspiration-turbo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-3e03eb6a-9882-405e-8e27-d3ab5cb2c577')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-3e03eb6a-9882-405e-8e27-d3ab5cb2c577 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-3e03eb6a-9882-405e-8e27-d3ab5cb2c577');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-ea83e521-56a5-44fb-a69c-4481c26846b8">
+  <button class="colab-df-quickchart" onclick="quickchart('df-ea83e521-56a5-44fb-a69c-4481c26846b8')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-ea83e521-56a5-44fb-a69c-4481c26846b8 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" id="yryN1Ls-y5FO">
+<div class="sourceCode" id="cb43"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co">#merge the new dataframe to the original datafram</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>oldcarprice <span class="op">=</span> pd.concat([oldcarprice, dummy_variable_2], axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a><span class="co"># drop original column &quot;aspiration&quot; from &quot;df&quot;</span></span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>oldcarprice.drop(<span class="st">&#39;aspiration&#39;</span>, axis <span class="op">=</span> <span class="dv">1</span>, inplace<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:236}"
+id="sFp2G5LCzAMI" data-outputId="70e684dd-eb75-452a-f87a-fd9d8ae82a14">
+<div class="sourceCode" id="cb44"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>oldcarprice.drop(oldcarprice.columns[<span class="op">-</span><span class="dv">4</span>:<span class="op">-</span><span class="dv">3</span>], axis <span class="op">=</span> <span class="dv">1</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>oldcarprice.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="96">
+
+  <div id="df-632461cd-2319-4fc6-acf1-5294ebc479b4" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>symboling</th>
+      <th>normalized-losses</th>
+      <th>make</th>
+      <th>num-of-doors</th>
+      <th>body-style</th>
+      <th>drive-wheels</th>
+      <th>engine-location</th>
+      <th>wheel-base</th>
+      <th>length</th>
+      <th>width</th>
+      <th>...</th>
+      <th>horsepower</th>
+      <th>peak-rpm</th>
+      <th>city-L/100km</th>
+      <th>highway-L/100km</th>
+      <th>price</th>
+      <th>horsepower-bins</th>
+      <th>gas</th>
+      <th>gas</th>
+      <th>aspiration-std</th>
+      <th>aspiration-turbo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>3</td>
+      <td>122</td>
+      <td>alfa-romero</td>
+      <td>two</td>
+      <td>convertible</td>
+      <td>rwd</td>
+      <td>front</td>
+      <td>88.6</td>
+      <td>0.811148</td>
+      <td>0.890278</td>
+      <td>...</td>
+      <td>111</td>
+      <td>5000.0</td>
+      <td>11.190476</td>
+      <td>8.703704</td>
+      <td>13495.0</td>
+      <td>Low</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>3</td>
+      <td>122</td>
+      <td>alfa-romero</td>
+      <td>two</td>
+      <td>convertible</td>
+      <td>rwd</td>
+      <td>front</td>
+      <td>88.6</td>
+      <td>0.811148</td>
+      <td>0.890278</td>
+      <td>...</td>
+      <td>111</td>
+      <td>5000.0</td>
+      <td>11.190476</td>
+      <td>8.703704</td>
+      <td>16500.0</td>
+      <td>Low</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+      <td>122</td>
+      <td>alfa-romero</td>
+      <td>two</td>
+      <td>hatchback</td>
+      <td>rwd</td>
+      <td>front</td>
+      <td>94.5</td>
+      <td>0.822681</td>
+      <td>0.909722</td>
+      <td>...</td>
+      <td>154</td>
+      <td>5000.0</td>
+      <td>12.368421</td>
+      <td>9.038462</td>
+      <td>16500.0</td>
+      <td>Medium</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2</td>
+      <td>164</td>
+      <td>audi</td>
+      <td>four</td>
+      <td>sedan</td>
+      <td>fwd</td>
+      <td>front</td>
+      <td>99.8</td>
+      <td>0.848630</td>
+      <td>0.919444</td>
+      <td>...</td>
+      <td>102</td>
+      <td>5500.0</td>
+      <td>9.791667</td>
+      <td>7.833333</td>
+      <td>13950.0</td>
+      <td>Low</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2</td>
+      <td>164</td>
+      <td>audi</td>
+      <td>four</td>
+      <td>sedan</td>
+      <td>4wd</td>
+      <td>front</td>
+      <td>99.4</td>
+      <td>0.848630</td>
+      <td>0.922222</td>
+      <td>...</td>
+      <td>115</td>
+      <td>5500.0</td>
+      <td>13.055556</td>
+      <td>10.681818</td>
+      <td>17450.0</td>
+      <td>Low</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 29 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-632461cd-2319-4fc6-acf1-5294ebc479b4')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-632461cd-2319-4fc6-acf1-5294ebc479b4 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-632461cd-2319-4fc6-acf1-5294ebc479b4');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-14ebdbf7-29b2-450b-9545-3578b495279c">
+  <button class="colab-df-quickchart" onclick="quickchart('df-14ebdbf7-29b2-450b-9545-3578b495279c')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-14ebdbf7-29b2-450b-9545-3578b495279c button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" id="5I_eVIgo8Sn2">
+<div class="sourceCode" id="cb45"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>oldcarprice.to_csv(<span class="st">&#39;drive/MyDrive/datasets/oldcarprice_v1.csv&#39;</span>)</span></code></pre></div>
+</div>
+</body>
+</html>
