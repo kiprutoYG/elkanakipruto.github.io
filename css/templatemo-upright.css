@@ -98,6 +98,8 @@ hr { border-top: 4px solid #ec4662; }
 	height: auto;
 	background: transparent;
 	position: absolute;
+	background-attachment: scroll; /* Disables fixed background on mobile */
+        height: 50vh; /* Reduces section height on smaller screens */
     width: 350px;
     left: -470px;
     top: 0;
@@ -433,6 +435,8 @@ a.tm-paging-link:hover {
 	padding-top: 15%;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap; /* Allows icons to wrap on smaller screens */
+    justify-content: center; /* Center icons on smaller screen
 }
 
 .skill-item {
@@ -486,6 +490,21 @@ a.tm-paging-link:hover {
 /* Change caption color on hover */
 .skill-item:hover .skill-caption {
     color: #007acc;
+}
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+    .skill-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .skill-caption {
+        font-size: 14px;
+    }
+
+    .skills-container {
+        gap: 15px; /* Reduce gap for smaller screens */
+    }
 }
 
 figure.effect-honey { background: #444655; }
