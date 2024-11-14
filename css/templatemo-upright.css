@@ -18,12 +18,14 @@ https://templatemo.com/tm-555-upright
 */
 
 html, body { overflow-x: hidden; }
-body { font-family: 'Kumbh Sans', sans-serif; }
-div, a, p { color: #666666; }
+body { /*font-family: 'Kumbh Sans', sans-serif;*/
+	font-family: 'Trebuchet MS', sans-serif;
+font-size: 1.3rem;}
+div, a, p { color: #444655; }
 p, address { line-height: 1.8; }
 a {	transition: all 0.3s ease; }
 a:hover {
-	color: #006699;
+	color: #62DDF5;
 	text-decoration: none;
 }
 
@@ -32,18 +34,18 @@ a:hover {
 .btn-primary {
 	padding: 12px 50px;
     border-radius: 0;
-    background: #006699;
-    font-size: 1.2rem;
+    background: #ec4662;
+    font-size: 1.5rem;
     border: 0;
 }
 
 .btn-primary:hover { background: #068ccf; }
-.tm-text-primary { color: #006699; }
-.tm-text-secondary { color: #009999; }
-hr { border-top: 4px solid #CCC; }
+.tm-text-primary { color: #4c7ef5; }
+.tm-text-secondary { color: #eee8a9; }
+hr { border-top: 4px solid #ec4662; }
 
 .tm-hr-short {
-	border-top: 1px solid #006699;
+	border-top: 3px solid #4c7ef5;
 	width: 238px;
 	margin-left: auto;
 	margin-right: auto;
@@ -58,7 +60,7 @@ hr { border-top: 4px solid #CCC; }
 	padding-right: 15px;
 }
 
-.tm-mt-100 { margin-top: 100px; }
+.tm-mt-100 { margin-top: 200px; }
 
 .tm-sidebar {
 	background-color: #fff;
@@ -73,8 +75,9 @@ hr { border-top: 4px solid #CCC; }
 }
 
 .tm-section-wrap {
+	background-color: #fff;
 	width: calc(100% - 750px);
-	margin-left: 750px;
+	margin-left: 780px;
 	margin-right: 0;
 	position: relative;
 }
@@ -83,6 +86,8 @@ hr { border-top: 4px solid #CCC; }
 
 #gallery,
 #about,
+#skills,
+#partners,
 #contact {
 	padding-bottom: 150px;
 }
@@ -93,7 +98,7 @@ hr { border-top: 4px solid #CCC; }
 	height: auto;
 	background: transparent;
 	position: absolute;
-    width: 400px;
+    width: 350px;
     left: -470px;
     top: 0;
 }
@@ -125,15 +130,28 @@ hr { border-top: 4px solid #CCC; }
 }
 
 .navbar-toggler { display: none; }
+.tm-brand{
+	margin-left: 8px;
+	margin-top: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-text-stroke: 1.5px #a9aabc;
+	text-shadow: 0 0 0 #ec4662;
+	transition: all 250ms;
+}
+.tm-brand:hover{
+	text-shadow: 4px 4px 0 #ec4662;
+	transform: translate(-2px, -2px)
+}
 
 .tm-brand-box {
-	width: 240px;
+	width: 200px;
     height: 180px;
-    background: #006699;
+    background: #4c7ef5;
     color: white;
     display: flex;
-    align-items: center;
-	justify-content: center;
+    align-items: right;
+	justify-content: right;
 	margin-bottom: 100px;
 }
 
@@ -150,7 +168,7 @@ hr { border-top: 4px solid #CCC; }
 
 .nav-link {
 	position: relative;
-	color: #006699;
+	color: #4c7ef5;
 	font-size: 1.4rem;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -163,7 +181,7 @@ hr { border-top: 4px solid #CCC; }
 	width: 0;
 	height: 0;
 	border-top: 21px solid transparent;
-	border-left: 20px solid #006699;
+	border-left: 20px solid #4c7ef5;
 	border-bottom: 21px solid transparent;
 	opacity: 0;
 	transition: all 0.3s ease;
@@ -171,8 +189,8 @@ hr { border-top: 4px solid #CCC; }
 
 .nav-item:hover .nav-link,
 .nav-link.current {
-	background-color: #F2F2F2;
-	color: #006699;
+	background-color: white;
+	color: #ec4662;
 	padding-left: 30px;
 }
 
@@ -226,7 +244,7 @@ hr { border-top: 4px solid #CCC; }
 }
 
 .tm-post-link:hover {
-	color: #068ccf;
+	color: #444655;
 }
 
 /* Gallery section */
@@ -254,10 +272,10 @@ hr { border-top: 4px solid #CCC; }
 
 .tm-gallery-link {
 	padding: 15px;
-	color: #006699;	
+	color: #4c7ef5;	
 }
 
-.tm-gallery-link.active { color: #666666; }
+.tm-gallery-link.active { color: #4c7ef5; }
 .tm-gallery-link-icon { width: 25px; }
 
 .tm-paging {
@@ -312,7 +330,7 @@ a.tm-paging-link:hover {
 	max-width: 270px;
 	max-height: 180px;
 	width: 48%;
-	background: #3085a3;
+	background: #4c7ef5;
 	text-align: center;
 	cursor: pointer;
 }
@@ -329,7 +347,7 @@ a.tm-paging-link:hover {
 	padding: 1em;
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 1em;
+	font-size: 0.3em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
@@ -371,15 +389,106 @@ a.tm-paging-link:hover {
 }
 
 .tm-gallery figure p {
-	letter-spacing: 1px;
+	letter-spacing: 3px;
 	font-size: 68.5%;
 }
 
 /*---------------*/
 /***** Honey *****/
 /*---------------*/
+.app__testimonials-brands {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+  }
+  .app__testimonials-brands img {
+	opacity: 1;
+	max-height: 100px; /* Adjust the height as needed */
+	max-width: 100%; 
+	animation: move 5s infinite alternate; /* Apply animation */
+  }
+  .app__testimonials-brands div:nth-child(1) img {
+	animation-delay: 0s; /* No delay for the first image */
+  }
+  .app__testimonials-brands div:nth-child(2) img {
+	animation-delay: 1s; /* 1 second delay for the second image */
+  }
+  .app__testimonials-brands div:nth-child(3) img {
+	animation-delay: 2s; /* 2 seconds delay for the third image */
+  }
+  @keyframes move {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(20px); /* Move 20px to the right */
+	}
+  }
 
-figure.effect-honey { background: #4a3753; }
+
+  
+
+.skills-container {
+	padding-top: 15%;
+    display: flex;
+    gap: 20px;
+}
+
+.skill-item {
+	padding: 15px; /* Add padding around each icon */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+	border-radius: 50%; /* Optional, for rounded effect on hover area */
+}
+
+.skill-icon {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+	border-radius: 50%; /* Makes the icons circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skill-caption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.skill-item:hover .skill-icon {
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.skill-item:hover .skill-caption {
+    color: #007acc;
+}
+/* Keyframe for the explode animation */
+@keyframes explode {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1.3) rotate(10deg);
+    }
+    100% {
+        transform: scale(1.2) rotate(0deg);
+    }
+}
+
+/* Apply the explode animation on hover */
+.skill-item:hover .skill-icon {
+    animation: explode 0.5s ease forwards;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Change caption color on hover */
+.skill-item:hover .skill-caption {
+    color: #007acc;
+}
+
+figure.effect-honey { background: #444655; }
 
 figure.effect-honey img {
 	opacity: 0.9;
