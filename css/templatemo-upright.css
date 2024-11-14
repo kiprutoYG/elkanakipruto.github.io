@@ -98,8 +98,6 @@ hr { border-top: 4px solid #ec4662; }
 	height: auto;
 	background: transparent;
 	position: absolute;
-	background-attachment: scroll; /* Disables fixed background on mobile */
-        height: 50vh; /* Reduces section height on smaller screens */
     width: 350px;
     left: -470px;
     top: 0;
