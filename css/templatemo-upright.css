@@ -21,6 +21,19 @@ html, body { overflow-x: hidden; }
 body { /*font-family: 'Kumbh Sans', sans-serif;*/
 	font-family: 'Trebuchet MS', sans-serif;
 font-size: 1.0rem;}
+/* Reduce font size for devices with width smaller than 768px */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.6rem; /* Adjust font size for tablets */
+  }
+}
+
+/* Further reduce font size for devices smaller than 480px */
+@media (max-width: 480px) {
+  body {
+    font-size: 0.4rem; /* Adjust font size for small phones */
+  }
+}
 div, a, p { color: #444655; }
 p, address { line-height: 1.8; }
 a {	transition: all 0.3s ease; }
